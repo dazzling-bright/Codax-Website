@@ -1,4 +1,4 @@
-import Nav from "./components/header-nav/nav";
+import Nav from "./components/header/nav";
 
 function App() {
   return (
