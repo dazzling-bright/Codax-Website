@@ -14,7 +14,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="flex flex-col py-4 md:flex-row md:items-center text-xl w-full">
+    <header className="bg-primary px-4 md:px-8 lg:px-8 flex flex-col py-4 md:flex-row md:items-center text-xl w-full">
       <div className="flex justify-between w-full md:w-auto items-center">
         <h1 className="font-extrabold text-4xl text-blue-500">Codax</h1>
         <figure
