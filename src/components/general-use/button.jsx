@@ -19,7 +19,7 @@ function Button({
 
 export default Button;
 
-/** Body */
+/** Body Section */
 /** Getting Started Button */
 
 const colorClasses = {

@@ -1,6 +1,7 @@
 import ResourcesIcon from "./images/resources.svg";
 import ThumbIcon from "./images/vuesax.svg";
 import PriceIcon from "./images/price.svg";
+import SectionBorderBottom from "../general-use/SectionBorderBottom";
 
 const services = [
   {
@@ -26,9 +27,13 @@ const services = [
 function Services() {
   return (
     <section aria-labelledby="services-heading" className="p-8 ">
-      <h2 id="services-heading" className="font-bold text-4xl text-center md:text-left">
+      <h2
+        id="services-heading"
+        className="font-bold text-4xl mb-6"
+      >
         Our Services
       </h2>
+      <SectionBorderBottom text="online learning" />
       <div className="flex flex-col md:flex-row justify-center items-center gap-4 font-bold">
         {services.map(({ icon, description, title }, index) => (
           <div

@@ -4,14 +4,14 @@ const ContentSection = ({ titleColor, borderColor, title, content }) => {
   return (
     <section className={`max-w-full md:w-1/2 rounded-2xl shadow-xl my-4 p-4`}>
       <h2
-        className={`text-${titleColor} pt-4 border-t-4 border-${borderColor} uppercase my-4 font-bold`}
+        className={`text-${titleColor} pt-4 border-t-2 border-${borderColor} uppercase my-4 font-bold`}
       >
         {title}
       </h2>
       <h3 className="text-custom-royal-blue my-4 text-2xl font-bold">
         Our {title}
       </h3>
-      <p className="text-custom-black">{content}</p>
+      <p className="text-custom-black font-bold">{content}</p>
     </section>
   );
 };

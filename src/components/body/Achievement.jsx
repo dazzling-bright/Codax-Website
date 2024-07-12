@@ -19,7 +19,7 @@ const StatItem = ({ number, label }) => (
 
 const Achievement = () => (
   <section
-    className="flex flex-col md:flex-row items-center gap-8 max-w-fit rounded-2xl md:mx-auto mx-4 justify-center py-8 bg-secondaryColor text-white"
+    className="flex flex-col md:flex-row items-center gap-8 max-w-fit rounded-2xl mx-auto justify-center py-8 bg-secondaryColor text-white"
     aria-labelledby="achievement-title"
   >
     {/** This H2 element is only for screen readers */}
