@@ -1,6 +1,7 @@
 import AboutUs from "./components/body/About";
 import GettingStarted from "./components/body/GettingStarted";
 import MissionAndVision from "./components/body/Mission";
+import Services from "./components/body/Services";
 import Nav from "./components/header/nav";
 import Hero from "./components/hero/Hero";
 
@@ -12,6 +13,7 @@ function App() {
       <GettingStarted />
       <AboutUs />
       <MissionAndVision />
+      <Services />
     </main>
   );
 }
