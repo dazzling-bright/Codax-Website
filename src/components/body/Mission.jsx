@@ -22,7 +22,7 @@ const MissionAndVision = () => {
   const visionStatement =
     "To provide world class tutoring to the next generation of Developers.";
   return (
-    <section className="m-16 justify-center items-center flex flex-col md:flex-row gap-12 lg:gap-20">
+    <section className="m-16 justify-center flex flex-col md:flex-row gap-12 lg:gap-20">
       <ContentSection
         titleColor="orange-300"
         borderColor="orange-300"
