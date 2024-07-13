@@ -1,4 +1,5 @@
 import AboutUs from "./components/body/About";
+import AboutTeam from "./components/body/AboutTheTeam";
 import Achievement from "./components/body/Achievement";
 import GettingStarted from "./components/body/GettingStarted";
 import MissionAndVision from "./components/body/Mission";
@@ -16,6 +17,7 @@ function App() {
       <MissionAndVision />
       <Services />
       <Achievement />
+      <AboutTeam />
     </main>
   );
 }
