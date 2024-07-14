@@ -9,6 +9,11 @@ module.exports = {
         "custom-black": "rgba(16, 10, 1, 1)",
         "custom-royal-blue": "rgba(15, 10, 51, 1)",
       },
+      fontFamily: {
+        impact: ["Impact", "sans-serif"],
+        impacted: ["Impacted", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],

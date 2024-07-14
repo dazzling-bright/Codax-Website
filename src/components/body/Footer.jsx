@@ -1,14 +1,23 @@
 import { NewsLetter } from "./Newsletter";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { SlLocationPin } from "react-icons/sl";
+import { FaFacebook } from "react-icons/fa"; 
+import { FiTwitter } from "react-icons/fi";
+import { BsLinkedin } from "react-icons/bs";
+import { FaSquareInstagram } from "react-icons/fa6";
+
 
 const FooterSection = ({ title, links }) => (
-  <section className="py-4 flex-col justify-between">
+  <section className="py-4 flex flex-col justify-between">
     <h2 className="mb-8 font-bold text-xl">{title}</h2>
     <ul className="">
       {links.map((link, index) => (
-        <li key={index} className="mb-2">
+        <li key={index} className="mb-2 flex items-center">
+          {link.icon && <span className="mr-2">{link.icon}</span>}
           <a
             href={link.href}
-            className="hover:underline transition-all duration-200 break-words"
+            className="hover:underline transition-all duration-200 "
           >
             {link.text}
           </a>
@@ -23,10 +32,15 @@ const Footer = () => {
     {
       title: "Reach us",
       links: [
-        { href: "/", text: "+101234567889" },
-        { href: "/", text: "codaxng@gmail.com" },
+        { href: "/", icon: <FaPhoneVolume />, text: "+101234567889" },
         {
           href: "/",
+          icon: <MdOutlineMailOutline />,
+          text: "codaxng@gmail.com",
+        },
+        {
+          href: "/",
+          icon: <SlLocationPin />,
           text: "No 27, Golden Lane, off Heavenly Driveway, Lekki, Lagos.",
         },
       ],
@@ -52,17 +66,17 @@ const Footer = () => {
     {
       title: "Follow us on socials",
       links: [
-        { href: "/", text: "Facebook" },
-        { href: "/", text: "Twitter" },
-        { href: "/", text: "Instagram" },
-        { href: "/", text: "LinkedIn" },
+        { href: "/", text: "Facebook", icon: <FaFacebook /> },
+        { href: "/", text: "Twitter", icon: <FiTwitter /> },
+        { href: "/", text: "Instagram", icon: <FaSquareInstagram /> },
+        { href: "/", text: "LinkedIn", icon: <BsLinkedin /> },
       ],
     },
   ];
 
   return (
-    <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center lg:text-left gap-4 px-4 md:px-12 py-8 bg-custom-black text-white">
-      <h3 className="col-span-1 md:col-span-2 lg:col-span-5 font-bold text-4xl py-12 border-0 border-b-4 border-b-white  md:w-full text-left">
+    <footer className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:text-left gap-8 px-12 py-12 bg-custom-black text-white">
+      <h3 className="col-span-full font-bold text-4xl py-12 border-0 border-b-4 border-b-white w-full text-left">
         Codax
       </h3>
       {sections.map((section, index) => (
@@ -70,9 +84,8 @@ const Footer = () => {
           <FooterSection title={section.title} links={section.links} />
         </div>
       ))}
-      <div className="flex flex-col md:items-start">
-        <NewsLetter />
-      </div>
+
+      <NewsLetter />
     </footer>
   );
 };
