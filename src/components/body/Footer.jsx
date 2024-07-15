@@ -2,11 +2,10 @@ import { NewsLetter } from "./Newsletter";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
-import { FaFacebook } from "react-icons/fa"; 
+import { FaFacebook } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareInstagram } from "react-icons/fa6";
-
 
 const FooterSection = ({ title, links }) => (
   <section className="py-4 flex flex-col justify-between">
@@ -75,7 +74,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:text-left gap-8 px-12 py-12 bg-custom-black text-white">
+    <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12 bg-custom-black text-white">
       <h3 className="col-span-full font-bold text-4xl py-12 border-0 border-b-4 border-b-white w-full text-left">
         Codax
       </h3>
@@ -84,8 +83,9 @@ const Footer = () => {
           <FooterSection title={section.title} links={section.links} />
         </div>
       ))}
-
-      <NewsLetter />
+      <div className="col-span-full">
+        <NewsLetter />
+      </div>
     </footer>
   );
 };

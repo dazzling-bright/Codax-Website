@@ -14,6 +14,15 @@ module.exports = {
         impacted: ["Impacted", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 40s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

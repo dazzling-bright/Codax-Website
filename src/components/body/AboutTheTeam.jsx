@@ -19,7 +19,7 @@ const TeamMemberCard = ({ name, loadImage, specialty, index }) => {
 
   return (
     <div
-      className="w-full flex flex-col gap-4 self-stretch shadow-lg py-4 px-2 rounded-2xl bg-primaryColor"
+      className="w-[80%] md:w-full flex flex-col gap-4 self-stretch shadow-lg py-4 px-2 rounded-2xl bg-primaryColor"
       key={index}
     >
       <figure className="max-h-[160px] overflow-hidden">

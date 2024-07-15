@@ -27,7 +27,7 @@ const services = [
 function Services() {
   return (
     <section aria-labelledby="services-heading" className="px-4 md:px-8">
-      <h2 id="services-heading" className="font-bold text-4xl mb-6">
+      <h2 id="services-heading" className="font-bold text-4xl">
         Our Services
       </h2>
       <SectionBorderBottom text="online learning" />
