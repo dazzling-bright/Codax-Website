@@ -3,7 +3,7 @@ import AboutUsImage from "./images/AboutUsImage.png";
 
 function AboutUs() {
   return (
-    <section className="flex flex-col md:flex-row px-4 md:px-8 lg:px-8 justify-center items-center mt-12 mb-24 gap-4 font-semibold">
+    <section id="about" className="flex flex-col md:flex-row px-4 md:px-8 lg:px-8 justify-center items-center mt-12 mb-24 gap-4 font-semibold">
       <figure className="w-full md:w-1/2 p-28 md:p-12">
         <img
           src={AboutUsImage}

@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import { NewsLetter } from "./Newsletter";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -6,6 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareInstagram } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const FooterSection = ({ title, links }) => (
   <section className="py-4 flex flex-col justify-between">
@@ -14,12 +16,22 @@ const FooterSection = ({ title, links }) => (
       {links.map((link, index) => (
         <li key={index} className="mb-2 flex items-center">
           {link.icon && <span className="mr-2">{link.icon}</span>}
-          <a
-            href={link.href}
-            className="hover:underline transition-all duration-200 "
-          >
-            {link.text}
-          </a>
+          {link.href.startsWith("#") ? (
+            <HashLink
+              smooth
+              to={link.href}
+              className="hover:underline transition-all duration-200 "
+            >
+              {link.text}
+            </HashLink>
+          ) : (
+            <Link
+              to={link.href}
+              className="hover:underline transition-all duration-200"
+            >
+              {link.text}
+            </Link>
+          )}
         </li>
       ))}
     </ul>
@@ -47,10 +59,10 @@ const Footer = () => {
     {
       title: "Company",
       links: [
-        { href: "/", text: "About" },
-        { href: "/", text: "Blog" },
-        { href: "/", text: "Contact Us" },
-        { href: "/", text: "Shop" },
+        { href: "#about", text: "About" },
+        { href: "services", text: "Blog" },
+        { href: "contact-us", text: "Contact Us" },
+        { href: "shop", text: "Shop" },
       ],
     },
     {

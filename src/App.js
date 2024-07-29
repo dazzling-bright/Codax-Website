@@ -1,30 +1,23 @@
-import AboutUs from "./components/body/About";
-import AboutTeam from "./components/body/AboutTheTeam";
-import Achievement from "./components/body/Achievement";
-import Footer from "./components/body/Footer";
-import GettingStarted from "./components/body/GettingStarted";
-import LearnFromHome from "./components/body/LearnFromHome";
-import MissionAndVision from "./components/body/Mission";
-import Services from "./components/body/Services";
-import Tutor from "./components/body/Tutor";
-import Nav from "./components/header/nav";
-import Hero from "./components/hero/Hero";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import HomePage from "./Pages/HomePage";
+import ShopPage from "./Pages/ShopPage";
+import BlogPage from "./Pages/BlogPage";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   return (
-    <main className=" max-w-[96rem] mx-auto">
-      <Nav />
-      <Hero />
-      <GettingStarted />
-      <AboutUs />
-      <MissionAndVision />
-      <Services />
-      <Achievement />
-      <LearnFromHome />
-      <Tutor />
-      <AboutTeam />
-      <Footer />
-    </main>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/about" element={<ContactPage />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
