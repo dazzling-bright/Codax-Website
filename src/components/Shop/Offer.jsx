@@ -23,7 +23,7 @@ const BusinessOffers = () => {
             key={index}
             className="bg-slate-100 px-8 py-12 flex items-center justify-center flex-1 rounded-lg shadow-md"
           >
-            <p className="text-black text-sm font-semibold">{offer.text}</p>
+            <p className="text-black text-sm text-center font-semibold">{offer.text}</p>
           </div>
         ))}
       </article>
