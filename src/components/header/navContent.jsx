@@ -1,4 +1,5 @@
 import Button from "../general-use/button";
+import { Link } from "react-router-dom";
 
 const NavContent = () => {
   const listItems = ["Home", "Shop", "Blog", "Contact Us"];
@@ -11,13 +12,13 @@ const NavContent = () => {
             key={index}
             className="border-b-4 py-2 border-transparent  hover:ml-4 md:hover:ml-0 hover:border-orange-300 hover:cursor-pointer hover:text-orange-400 transition-all duration-300"
           >
-            <a
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
+            <Link
+              to={`${item.toLowerCase()}`}
               className="focus:outline-none focus:outline-offset-8 focus:outline-4 focus:outline-inherit"
               tabIndex={0}
             >
               {item}
-            </a>
+            </Link>
           </li>
         ))}
         <Button className="text-white">Purchase now</Button>
