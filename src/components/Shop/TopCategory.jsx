@@ -30,7 +30,7 @@ const TopCategory = () => {
       </p>
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
         {categories.map((category, index) => (
-          <div key={index} className="flex flex-col items-center gap-4 my-4 md:my-8">
+          <div key={index} className="flex flex-col items-center gap-4 my-4">
             <div className="bg-custom-black p-8 max-w-fit rounded-lg">
               <img src={category.src} alt={category.alt} />
             </div>

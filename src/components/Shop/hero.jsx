@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section className="bg-primary px-4 md:px-8 lg:px-8 mb-24 flex flex-col md:flex-row text-blue-500 items-center gap-4 ">
       <main className="text-2xl flex  justify-between flex-col md:w-1/2 gap-8">
-        <h2 className="leading-tight text-6xl font-extrabold text-black">
+        <h2 className="leading-tight text-4xl font-extrabold text-black">
           Become a <span className="text-orange-300"> World Class </span>
           Software Developer
         </h2>

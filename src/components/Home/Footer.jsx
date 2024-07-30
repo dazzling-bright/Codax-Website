@@ -86,7 +86,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12 bg-custom-black text-white">
+    <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 pb-16 py-12 bg-custom-black text-white">
       <h3 className="col-span-full font-bold text-4xl py-12 border-0 border-b-4 border-b-white w-full text-left">
         Codax
       </h3>
