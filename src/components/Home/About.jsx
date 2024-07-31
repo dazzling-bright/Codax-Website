@@ -3,20 +3,23 @@ import AboutUsImage from "./images/AboutUsImage.png";
 
 function AboutUs() {
   return (
-    <section id="about" className="flex flex-col md:flex-row px-4 md:px-8 lg:px-8 justify-center items-center mt-12 mb-24 gap-4 font-semibold">
-      <figure className="w-full md:w-1/2 p-8 md:p-12">
+    <section
+      id="about"
+      className="flex flex-col md:flex-row px-4 md:px-8 lg:px-8 justify-center items-center mt-12 mb-24 md:gap-12 font-semibold"
+    >
+      <figure className="">
         <img
           src={AboutUsImage}
           alt="A young smiling woman"
-          className="block w-full h-auto object-cover"
+          className="block max-h-[400px] object-cover"
         />
       </figure>
       <div className="w-full md:w-1/2 mx-4 lg:px-8">
         <h2 className="font-bold text-4xl mb-6 text-custom-royal-blue">
           About Us
         </h2>
-        <SectionBorderBottom text="since 2022"/>
-        <p className="text-xl leading-10 text-custom-black ">
+        <SectionBorderBottom text="since 2022" />
+        <p className="leading-10 text-custom-black ">
           We are a global brand that provides tutoring services in Software
           Development, Cyber Security, Programming, and Artificial Intelligence.
           As part of our mission to help people succeed in these fields, we

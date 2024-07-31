@@ -1,8 +1,8 @@
 import Button from "../general-use/button";
-import HeroImage from "./HeroImage.png";
-import UserOne from "./user1.png";
-import UserTwo from "./user2.png";
-import UserThree from "./user3.png";
+import HeroImage from "./images/BlogHeroImage.png";
+import UserOne from "../hero/user1.png";
+import UserTwo from "../hero/user2.png";
+import UserThree from "../hero/user3.png";
 
 const Hero = () => {
   const usersImage = [
@@ -23,8 +23,8 @@ const Hero = () => {
     <section className="bg-primaryColor pb-8 px-4 md:px-8 lg:px-8 mb-24 flex flex-col md:flex-row text-blue-500 items-center gap-4 ">
       <main className="text-2xl flex  justify-between flex-col md:w-1/2 gap-8">
         <h2 className="leading-tight text-4xl font-extrabold text-black">
-          Become a <span className="text-orange-300"> World Class </span>
-          Software Developer
+          Learn Software Development and Be
+          <span className="text-orange-300"> Sought After</span>
         </h2>
         <p className="text-xl text-custom-royal-blue">
           Join the largest online learning platform to upscale your skills for a

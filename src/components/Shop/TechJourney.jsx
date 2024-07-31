@@ -1,6 +1,8 @@
 import Button from "../general-use/button";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import FreePackageTag from "./images/subscriptionPlan/freePlanTag.svg";
+import BasicPackageTag from "./images/subscriptionPlan/BasicPlanTag.svg";
+import PremiumPackageTag from "./images/subscriptionPlan/PremiumPlantag.svg";
 import Coin from "./images/subscriptionPlan/coin.svg";
 
 const plans = [
@@ -18,20 +20,20 @@ const plans = [
     name: "Basic plan",
     price: "$10/month",
     features: [
-      "10 user requests",
-      "50 downloads per day",
+      "15 user requests",
+      "100 downloads per day",
       "Daily content updates",
-      "Priority support",
+      "20 Editable Files",
     ],
   },
   {
-    name: "Pro plan",
+    name: "Premium plan",
     price: "$30/month",
     features: [
       "Unlimited user requests",
       "Unlimited downloads",
       "Daily content updates",
-      "24/7 support",
+      "Fully Editable Files",
     ],
   },
 ];
@@ -57,8 +59,12 @@ const TechJourney = () => {
             <figure className="absolute top-0 left-5 flex items-center">
               <img src={Coin} alt="" />
               {plan.name === "Free plan" && <img src={FreePackageTag} alt="" />}
-              {plan.name === "Basic plan" && <img src={FreePackageTag} alt="" />}
-              {plan.name === "Pro plan" && <img src={FreePackageTag} alt="" />}
+              {plan.name === "Basic plan" && (
+                <img src={BasicPackageTag} alt="" />
+              )}
+              {plan.name === "Premium plan" && (
+                <img src={PremiumPackageTag} alt="" />
+              )}
             </figure>
 
             <div className="text-secondaryColor mt-24">

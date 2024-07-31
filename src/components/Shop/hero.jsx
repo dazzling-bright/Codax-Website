@@ -20,11 +20,11 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="bg-primary px-4 md:px-8 lg:px-8 mb-24 flex flex-col md:flex-row text-blue-500 items-center gap-4 ">
+    <section className="bg-primaryColor pb-8 px-4 md:px-8 lg:px-8 mb-24 flex flex-col md:flex-row text-blue-500 items-center gap-4 ">
       <main className="text-2xl flex  justify-between flex-col md:w-1/2 gap-8">
         <h2 className="leading-tight text-4xl font-extrabold text-black">
-          Become a <span className="text-orange-300"> World Class </span>
-          Software Developer
+          Learn Software Development and Be
+          <span className="text-orange-300"> Sought After</span>
         </h2>
         <p className="text-xl text-custom-royal-blue">
           Join the largest online learning platform to upscale your skills for a

@@ -35,7 +35,7 @@ function GettingStarted() {
       <h3 className="leading-snug font-extrabold text-custom-royal-blue mt-24 text-3xl w-1/2">
         Getting Started is Super Easy. Let’s Get Started!
       </h3>
-      <div className="flex flex-wrap my-8 justify-center md:justify-between gap-4">
+      <div className="flex flex-wrap my-8 justify-center sm:justify-between gap-4">
         {options.map(({ icon, description, bgColor, btnText }, index) => (
           <div key={index} className="flex flex-col items-center gap-4">
             <figure className="p-4 rounded-full bg-white">

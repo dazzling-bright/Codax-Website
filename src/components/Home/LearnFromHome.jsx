@@ -8,7 +8,7 @@ function LearnFromHome() {
         <img
           src={LearnerImage}
           alt="A young smiling woman"
-          className="block w-full h-auto object-cover"
+          className="block max-h-[400px] object-cover"
         />
       </figure>
       <div className="w-full md:w-1/2 mx-4 lg:px-8">
@@ -16,7 +16,7 @@ function LearnFromHome() {
           Learn from the Comfort of Your Home
         </h2>
         <SectionBorderBottom text="paced learning" />
-        <p className="text-xl leading-10 text-custom-black ">
+        <p className="leading-10 text-custom-black ">
           At Codax, we pride ourselves in being able to impart knowledge with
           precision, simplicity and results. This is an opportunity to teach
           what you love while raising the next generation of Software
@@ -27,7 +27,7 @@ function LearnFromHome() {
           <span className="text-custom-royal-blue text-right block mt-4 pr-4">
             <a
               href="/"
-              className="text-secondaryColor underline hover:font-bold transition-all duration-300"
+              className="text-secondaryColor underline hover:opacity-85 transition-all duration-300"
             >
               Read More
             </a>
