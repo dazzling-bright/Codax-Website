@@ -2,11 +2,11 @@ import Hero from "../components/Blog/hero";
 
 import LatestStories from "../components/Blog/LatestStories";
 
-const ShopPage = () => (
+const BlogPage = () => (
   <>
     <Hero />
     <LatestStories />
   </>
 );
 
-export default ShopPage;
+export default BlogPage;

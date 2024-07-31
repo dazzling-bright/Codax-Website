@@ -2,7 +2,7 @@ import Button from "../general-use/button";
 import { Link } from "react-router-dom";
 
 const NavContent = () => {
-  const listItems = ["Home", "Shop", "Blog", "Contact Us"];
+  const listItems = ["Home", "Shop", "Blog", "Contact-Us"];
 
   return (
     <nav>
