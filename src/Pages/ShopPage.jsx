@@ -1,4 +1,5 @@
-import Hero from "../components/Shop/hero";
+import Hero from "../components/hero/Hero";
+import ShopHeroImage from "../components/Shop/images/shopHeroImage.png"
 import TopCategory from "../components/Shop/TopCategory";
 import WhatWeOffer from "../components/Shop/Offer";
 import PopularCourses from "../components/Shop/PopularCourses";
@@ -7,7 +8,7 @@ import TechJourney from "../components/Shop/TechJourney";
 
 const ShopPage = () => (
   <>
-    <Hero />
+    <Hero HeroImage={ShopHeroImage} plainHeadingText="Learn Software Development and Be" coloredHeadingText="Sought After"/>
     <TopCategory />
     <WhatWeOffer />
     <PopularCourses />

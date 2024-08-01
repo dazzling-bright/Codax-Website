@@ -1,5 +1,6 @@
 import Hero from "../components/hero/Hero";
 import GettingStarted from "../components/Home/GettingStarted";
+import HeroImage from "../components/Home/images/heroImage/HeroImage.png";
 import About from "../components/Home/About";
 import Mission from "../components/Home/Mission";
 import Services from "../components/Home/Services";
@@ -10,7 +11,7 @@ import AboutTeam from "../components/Home/AboutTheTeam";
 
 const HomePage = () => (
   <>
-    <Hero />
+    <Hero HeroImage={HeroImage} plainHeadingText="Become a" coloredHeadingText="World Class" dynamicHeadingText="Software Developer"/>
     <GettingStarted />
     <About />
     <Mission />
