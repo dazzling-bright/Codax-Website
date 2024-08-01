@@ -1,10 +1,10 @@
 export const NewsLetter = () => {
   return (
-    <section className="flex flex-col text-center md:max-w-[70%]  mx-auto gap-4 py-4 px-2 md:px-4 bg-white rounded-2xl text-black ">
+    <section className="flex flex-col text-center md:max-w-[70%] mx-auto gap-4 py-4 px-2 md:px-4 bg-white rounded-2xl text-black">
       <h2 className="font-bold">Join our Newsletter</h2>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 ">
         <input
-          className="bg-[rgba(238, 238, 237, 1)] flex-1 w-full border-gray-800 rounded-2xl p-4 border-2 border-inherit hover:border-slate-700 placeholder-slate-800"
+          className="bg-[rgba(238, 238, 237, 1)] flex-1 w-full border-slate-600 rounded-2xl p-4 border-2 border-inherit hover:border-slate-700 placeholder-slate-800"
           placeholder="Enter your email"
           type="email"
         />

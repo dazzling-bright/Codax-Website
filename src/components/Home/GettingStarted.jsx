@@ -30,7 +30,7 @@ function GettingStarted() {
   );
 
   return (
-    <section className="bg-primaryColor relative px-4 md:px-8 lg:px-8 text-secondaryColor max-w-fit p-4 mx-auto rounded-lg">
+    <section className="bg-primaryColor relative px-4 md:px-8 lg:px-8 text-secondaryColor max-w-[80%] p-4 mx-auto rounded-lg">
       <AnimateContent />
       <h3 className="leading-snug font-extrabold text-custom-royal-blue mt-24 text-3xl w-1/2">
         Getting Started is Super Easy. Let’s Get Started!

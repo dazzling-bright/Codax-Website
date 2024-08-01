@@ -4,11 +4,11 @@ import LearnerImage from "../Home/images/techBro.png";
 function LearnFromHome() {
   return (
     <section className="flex flex-col md:flex-row px-4 md:px-8 lg:px-8 justify-center items-center mt-12 mb-24 gap-4 font-semibold">
-      <figure className="w-full md:w-1/2 p-16 lg:p-20">
+      <figure className="w-full md:w-1/2 flex justify-center items-center p-4 md:p-8">
         <img
           src={LearnerImage}
-          alt="A young smiling woman"
-          className="block max-h-[400px] object-cover"
+          alt="A young man"
+          className="max-h-[400px] md:max-h-[500px] object-contain rounded-2xl"
         />
       </figure>
       <div className="w-full md:w-1/2 mx-4 lg:px-8">

@@ -14,7 +14,7 @@ function AboutUs() {
           className="block max-h-[400px] object-cover"
         />
       </figure>
-      <div className="w-full md:w-1/2 mx-4 lg:px-8">
+      <div className="w-full md:w-1/2 mx-4 mt-4 lg:px-8">
         <h2 className="font-bold text-4xl mb-6 text-custom-royal-blue">
           About Us
         </h2>

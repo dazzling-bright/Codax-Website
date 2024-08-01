@@ -25,14 +25,14 @@ const Hero = ({
   ];
 
   return (
-    <section className="bg-primaryColor pb-8 px-4 md:px-8 lg:px-8 mb-24 flex flex-col md:flex-row text-blue-500 items-center gap-4">
-      <main className="text-2xl flex justify-between flex-col md:w-1/2 gap-8">
-        <h2 className="mt-4 leading-tight text-6xl font-extrabold text-black">
+    <section className="bg-primaryColor pt-8 pb-8 px-4 md:px-8 lg:px-8 mb-24 flex flex-col md:flex-row text-blue-500 items-center gap-4">
+      <main className=" flex justify-between flex-col md:w-1/2 md:gap-12">
+        <h2 className="mt-4 leading-tight text-4xl font-extrabold text-black">
           {plainHeadingText}   
           <span className="text-orange-300"> {coloredHeadingText} </span>
           {dynamicHeadingText}
         </h2>
-        <p className="text-xl text-custom-royal-blue">
+        <p className=" text-custom-royal-blue my-2">
           Join the largest online learning platform to upscale your skills for a
           better future
         </p>
@@ -50,7 +50,7 @@ const Hero = ({
             Discover
           </Button>
         </div>
-        <div className="text-center text-xl bg-white border-4 shadow-md rounded-2xl py-4 self-center p-2">
+        <div className="text-center text-xl bg-white border-4 shadow-md rounded-2xl py-4 self-center p-2 lg:mt-8">
           <p className="font-bold">More than 2,000 Students Placed</p>
           <p className="text-xl">5k registered users</p>
           <figure className="flex gap-2 justify-center">

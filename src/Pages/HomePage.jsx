@@ -8,10 +8,16 @@ import Achievement from "../components/Home/Achievement";
 import LearnFromHome from "../components/Home/LearnFromHome";
 import Tutor from "../components/Home/Tutor";
 import AboutTeam from "../components/Home/AboutTheTeam";
+import LearnTogether from "../components/Home/LearnTogether";
 
 const HomePage = () => (
   <>
-    <Hero HeroImage={HeroImage} plainHeadingText="Become a" coloredHeadingText="World Class" dynamicHeadingText="Software Developer"/>
+    <Hero
+      HeroImage={HeroImage}
+      plainHeadingText="Become a"
+      coloredHeadingText="World Class"
+      dynamicHeadingText="Software Developer"
+    />
     <GettingStarted />
     <About />
     <Mission />
@@ -20,6 +26,7 @@ const HomePage = () => (
     <LearnFromHome />
     <Tutor />
     <AboutTeam />
+    <LearnTogether />
   </>
 );
 

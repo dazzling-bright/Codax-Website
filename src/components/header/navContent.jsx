@@ -10,7 +10,7 @@ const NavContent = () => {
         {listItems.map((item, index) => (
           <li
             key={index}
-            className="border-b-4 py-2 border-transparent  hover:ml-4 md:hover:ml-0 hover:border-orange-300 hover:cursor-pointer hover:text-orange-400 transition-all duration-300"
+            className="border-b-4 p-2 px-3 border-transparent  hover:ml-4 md:hover:ml-0 hover:border-orange-300 hover:cursor-pointer hover:text-orange-400 transition-all duration-300"
           >
             <Link to={`${item.toLowerCase()}`} className="" tabIndex={0}>
               {item}
