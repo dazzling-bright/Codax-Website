@@ -4,7 +4,7 @@ export const NewsLetter = () => {
       <h2 className="font-bold">Join our Newsletter</h2>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 ">
         <input
-          className="bg-[rgba(238, 238, 237, 1)] flex-1 w-full border-gray-700 rounded-2xl p-4 border-2 border-inherit hover:border-slate-700 placeholder-slate-800"
+          className="bg-[rgba(238, 238, 237, 1)] flex-1 w-full border-gray-800 rounded-2xl p-4 border-2 border-inherit hover:border-slate-700 placeholder-slate-800"
           placeholder="Enter your email"
           type="email"
         />
